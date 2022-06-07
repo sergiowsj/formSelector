@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="5.js"></script>
+    <title>Seletor para Formulários</title>
+  </head>
+  <body>
+    <form>
+      <p>
+        <label>Nome</label>
+        <input type="text" name="name" />
+      </p>
+
+      <p>
+        <label>Cor preferida</label>
+        <select name="color" id="color">
+          <option value="yellow">Amarelo</option>
+          <option value="red">Vermelho</option>
+          <option value="blue">Azul</option>
+        </select>
+      </p>
+
+      <p>
+        <label>Gosta de programar?</label>
+        <input type="radio" value="yes" name="likePrograming" />Sim
+        <input type="radio" value="no" name="likePrograming" />Não
+      </p>
+
+      <p>
+        <label>Conhecimentos de Programação</label>
+        <input type="checkbox" name="developerOptions" value="HTML" />HTML
+        <input
+          type="checkbox"
+          name="developerOptions"
+          value="JavaScript"
+        />JavaScript
+        <input type="checkbox" name="developerOptions" value="CSS" />CSS
+        <input type="checkbox" name="developerOptions" value="Express" />Express
+      </p>
+
+      <button type="button" onclick="showInfo()">Mostrar informações</button>
+    </form>
+  </body>
+</html>
